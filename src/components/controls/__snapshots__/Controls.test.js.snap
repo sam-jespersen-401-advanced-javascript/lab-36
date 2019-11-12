@@ -9,12 +9,14 @@ exports[`Controls component renders Controls 1`] = `
     onClick={[Function]}
   >
     stuff
+     
   </button>
   <button
     key="other"
     onClick={[Function]}
   >
     other
+     
   </button>
 </section>
 `;

@@ -65,7 +65,7 @@ describe('Moods', () => {
     });
   });
 
-  describe('container', () => {
+  describe.skip('container', () => {
     it('matches a snapshot', () => {
       const wrapper = shallow(<Moods />);
       expect(wrapper).toMatchSnapshot();

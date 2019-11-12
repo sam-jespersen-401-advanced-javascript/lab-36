@@ -12,12 +12,12 @@ const actions = [
   { name: 'STUDY', text: 'Study', stateName: 'studies' },
 ];
 
-const isTired = state => state.coffees < 1 && state.naps < 1;
-const isHyper = state => state.coffees > 3;
-const isEducated = state => state.studies > 2;
-const isHungry = state => state.snacks < 1;
+export const isTired = state => state.coffees < 1 && state.naps < 1;
+export const isHyper = state => state.coffees > 3;
+export const isEducated = state => state.studies > 2;
+export const isHungry = state => state.snacks < 1;
 
-const getFace = state => {
+export const getFace = state => {
   if(isTired(state) && isHungry(state)) return '🤬';
   if(isHyper(state) && isHungry(state)) return '🤮';
   if(isTired(state)) return '😴';
